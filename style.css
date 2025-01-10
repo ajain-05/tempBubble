@@ -1,0 +1,409 @@
+
+*{
+    overflow-x: hidden;
+}
+
+body{
+    background-color: #2D2D2A;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: #E5DCC5;
+    /* overflow-x: hidden;  */
+}
+
+.head{
+    height: 8vw;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #4C4C47;
+    position: fixed;
+    z-index: 2;
+    overflow: hidden;
+}
+.logo>p{
+    font-size: 4vw;
+    font-family: "Kaushan Script", serif;
+    font-weight: 400;
+    padding: 1vw;
+    color: #E5DCC5;
+    text-shadow: 1px 1px #2D2D2A, 2px 2px #2D2D2A; 
+}
+.nav>a{
+    margin: 1vw;
+    font-size: 2vw;
+    text-decoration: none;
+    font-family: "Poppins", serif;
+    color: #E5DCC5;
+    transition: color 0.3s ease;
+}
+.nav > a:hover {
+    color: #C14953;
+}
+.hero{
+    width: 100vw;
+    height: 10vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #2D2D2A;
+    padding-top: 10vw;
+    overflow: hidden;
+}
+
+.heroTxt>p{
+    color: #C14953;
+    text-shadow: 0 1px #4C4C47, 0 2px #4C4C47, 0 3px #4C4C47;
+    font-family: "Anton", serif;
+    font-size: 6.4vw;
+    
+    animation-name: text;
+    animation-timing-function: ease-in-out;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes text{
+    0% {
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+#explore{
+    margin-top: 3vw;
+    width: 8.5vw;
+    padding: 0.5vw;
+    font-family: "Poppins", serif;
+    font-size: 1vw;
+    margin-left: 67vw;
+    background-color: #C14953;
+    color: #E5DCC5;
+    border: none;
+    border-radius: 0.5vw;
+    transition: background-color 0.3s ease;
+}
+
+#explore:hover {
+    background-color: #848FA5;
+}
+
+h2{
+    text-align: center;
+    margin-top: 5vw;
+    font-size: 4vw;
+    color: #C14953;
+}
+
+
+
+
+
+.box{
+    width: 25vw;
+    height: 40vw;
+    background-color: #4C4C47;
+    margin-left: 1vw;
+    padding: 0.5vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 1vw;
+    transition: transform 0.5s ease-in-out;
+    overflow: hidden;
+}
+
+/* .box:hover{
+    transform: scale(0.9);
+} */
+
+.box>h3{
+    font-size: 2vw;
+    text-align: center;
+    color: #E5DCC5;
+}
+.box>img{
+    width: 20vw;
+    height: 15vw;
+    border-radius: 5vw 10vw 5vw 10vw;
+}
+.para{
+    background-color: #848FA5;
+    color: #E5DCC5; 
+    margin-top: 2vw;
+    height: 6vw;
+    padding: 1vw;
+    border-radius: 1vw;
+    overflow: hidden;
+    
+}
+.para>p{
+    font-size: 1.1vw;
+}
+
+
+.readMore{
+    margin-top: 1vw;
+    margin-left: 15vw;
+    background-color: #C14953;
+    color: #E5DCC5;
+    border: none;
+    padding: 0.5vw 1vw;
+    border-radius: 0.5vw;
+    font-family: "Poppins", serif;
+    font-size: 1vw;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    text-decoration: none;
+}
+
+.readMore:hover {
+    background-color: #848FA5;
+}
+
+.featured{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    row-gap: 1vw;
+    justify-items: center;
+    align-items: center;
+}
+
+.footer{
+    margin-top: 1vw;
+    background-color: #4C4C47;
+    text-align: center;
+    padding: 1rem 0;
+}
+.footer>p>a{
+    text-decoration: none;
+    font-weight: 900;
+    margin-left: 2rem;
+    color: #848FA5;
+    transition: color 0.3s ease;
+}
+.footer > p > a:hover {
+    color: #C14953;
+}
+.footer>p{
+    color: #FFFFFF;
+}
+
+
+
+@media (max-width:950px){
+    .head{
+    height: 10vw;
+}
+.logo>p{
+    font-size: 5vw;
+}
+.nav>a{
+    margin-left: 1vw;
+    font-size: 2.5vw;
+}
+
+
+.hero{
+    overflow: hidden;
+    width: 100vw;
+    height: 15vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #2D2D2A;
+    padding-top: 20vw;
+}
+
+.heroTxt>p{
+    font-size: 10vw;
+}
+
+#explore{
+    width: 20vw;
+    padding: 1vw;
+    font-size: 2vw;
+    margin-left: 70vw;
+}
+
+
+h2{
+    text-align: center;
+    margin-top: 10vw;
+    font-size: 5vw;
+    text-decoration-line: underline;
+    text-decoration-style:double;
+    text-decoration-thickness: 10px;
+}
+
+.featured{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    column-gap: 10vw;
+    row-gap: 5vw;
+}
+
+
+
+
+.box{
+    width: 40vw;
+    height: 55vw;
+    background-color: #4C4C47;
+    margin-left: 0.5vw;
+    padding: 0.5vw;
+    border-radius: 1vw;
+}
+
+.box>h3{
+    font-size: 2.5vw;
+    text-align: center;
+    color: #E5DCC5;
+}
+.box>img{
+    width: 30vw;
+    height: 25vw;
+}
+.para{
+    width: 35vw;
+    margin-top: 2vw;
+    height: 10vw;
+    border-radius: 1vw;
+    
+}
+.para>p{
+    margin-top: 1vw;
+    font-size: 1.7vw;
+}
+
+
+.readMore{
+    margin-top: 1.5vw;
+    margin-left: 25vw;;
+    font-size: 1.5vw;
+}
+
+.footer{
+    margin-top: 1rem;
+}
+.footer>p{
+    font-size: 2.5vw;
+   padding: 0;
+   margin: 0;
+}
+.footer>p>a{
+    margin-left: 1rem;
+    font-size: 2.5vw;
+}
+}
+
+
+@media (max-width:500px){
+.head{
+    height: 15vw;
+}
+.logo>p{
+    font-size: 8vw;
+}
+.nav>a{
+    margin-left: 1vw;
+    font-size: 3vw;
+}
+
+
+.hero{
+    width: 100vw;
+    height: 20vw;
+    padding-top: 25vw;
+}
+
+.heroTxt>p{
+    font-size: 11vw;
+}
+
+#explore{
+    width: 25vw;
+    padding: 1vw;
+    font-size: 2.5vw;
+}
+
+
+h2{
+    text-align: center;
+    margin-top: 15vw;
+    font-size: 8vw;
+    text-decoration-line: underline;
+    text-decoration-style:double;
+    text-decoration-thickness: 10px;
+}
+
+.featured{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    column-gap: 10vw;
+    row-gap: 5vw;
+}
+
+
+
+
+.box{
+    width:80vw;
+    height: 85vw;
+    padding: 0vw;
+    border-radius: 1.5vw;
+}
+
+.box>h3{
+    font-size: 4vw;
+    text-align: center;
+    overflow: hidden;
+
+}
+.box>img{
+    width: 50vw;
+    height: 45vw;
+}
+.para{
+    width: 55vw;
+    margin-top: 3vw;
+    height: 12.8vw;
+    border-radius: 1vw;
+    
+}
+.para>p{
+    margin-top: 1vw;
+    font-size: 2.5vw;
+}
+
+
+.readMore{
+    margin-top: 4.5;
+    margin-left: 45vw;;
+    font-size: 2vw;
+}
+
+.footer{
+    margin-top: 5vw;
+}
+.footer>p{
+    font-size: 3vw;
+   padding: 0;
+   margin: 0;
+}
+.footer>p>a{
+    margin-left: 1rem;
+    font-size: 2.5vw;
+}
+}

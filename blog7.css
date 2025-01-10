@@ -1,0 +1,359 @@
+*{
+    overflow-x: hidden;
+}
+
+body{
+    background-color: #2D2D2A;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background:url(./quantum\ 1.jpg);
+    background-size: cover;
+    height: 100vh;
+    width: 100vw;
+
+}
+
+.head{
+    height: 5vw;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #4C4C47;
+    position: fixed;
+    z-index: 2;
+}
+.logo>p{
+    font-size: 3vw;
+    font-family: "Kaushan Script", serif;
+    font-weight: 400;
+    padding: 1vw;
+    color: #E5DCC5;
+    text-shadow: 1px 1px #2D2D2A, 2px 2px #2D2D2A; 
+}
+.nav>a{
+    margin: 1vw;
+    font-size: 1.2vw;
+    text-decoration: none;
+    font-family: "Poppins", serif;
+    color: #E5DCC5;
+    transition: color 0.3s ease;
+}
+.nav > a:hover {
+    color: #C14953;
+}
+
+main{
+    padding-top: 8vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.blog1{
+    padding: 2vw;
+    width: 80vw;
+    background-color: hsla(0, 0%, 100%, 0.89);
+    border-radius: 2vw;
+    margin-bottom: 1vw;
+}
+
+.parag, .types, .work, .applications, h1, h2, h3 {
+    color: #2D2D2A;
+}
+
+h1, h2, h3 {
+    color:#333333;
+}
+
+h1{
+    font-size: 3vw;
+    text-align: center;
+}
+h2{
+    font-size: 2vw;
+    text-decoration-line: underline;
+    text-decoration-style: double;
+}
+h3{
+    font-size: 1.5vw;
+    text-decoration-line: underline;
+    text-decoration-style: wavy;
+}
+
+span{
+    font-weight: 900;
+    font-size: 1.1vw;
+}
+p,li{
+    font-size: 1.1vw;
+    font-weight: 500;
+}
+
+
+
+
+
+
+.Note{
+    background-color: hsla(0, 0%, 100%, 0.8);
+    width: 32.5vw;
+    margin-bottom: 1vw;
+    margin-left: 30vw;
+    padding: 2vw;
+    margin-top: 3vw;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
+    border-radius: 0.5vw;
+}
+
+.written{
+    width: 30vw;
+    padding: 0.5vw;
+    border-radius: 0.5vw;
+    margin-top: 1.5vw;
+    color: #2D2D2A;
+    background-color: white;
+}
+#DisplayNote{
+    margin-top: 0.5vw;
+    text-align: justify;
+}
+.writtenH2{
+    display: inline-block;
+    font-size: 1.5vw;
+    text-decoration: none;
+    margin-top: 0vw;
+}
+#delete,#edit{
+    display: inline-block;
+    font-size: 1.5vw;
+    margin-top: 0.5vw;
+    cursor: pointer;
+}
+#delete{
+    margin-left: 19vw;
+}
+
+
+
+.teztAreaH2{
+    text-decoration: none;
+    font-size: 1.2vw;
+}
+
+#Notes{
+    height: 15vw;
+    width: 30vw;
+    color: #2D2D2A;
+    filter: drop-shadow(2px 2px 10px rgba(0,0,0,.5));
+    border: 1px solid #2D2D2A;
+    background-color: #E5DCC5;
+    border-radius: 1vw;
+    padding: 1vw;
+    font-size: 1.2vw;
+    text-align: center;
+    resize: none;
+}
+
+button{
+    margin-left: 12vw;
+    margin-top: 2vw;
+    padding: 1vw;
+    background-color: #C14953;
+    color: #E5DCC5;
+    font-size: 1vw;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    border-radius: 0.5vw;
+}
+
+footer button:hover {
+    background-color: #A33B47;
+}
+
+#DisplayNote{
+    font-size: 1.5vw;
+    font-style: italic;
+}
+
+
+
+@media(max-width:950px){
+    .head{
+        height: 8.5vw;
+    }
+    /*Logo*/
+    .logo>p{
+        font-size: 5vw;
+        padding: 1vw;
+    }
+    /* Link */
+    .nav>a{
+        font-size:2vw;
+    }
+    
+    
+    /***** Main *****/
+    main{
+        padding-top: 10.5vw;
+    }
+    /* Contents of Main */
+    .blog1{
+        padding: 2.5vw;
+        width: 90vw;
+    }
+    
+    h1{
+        font-size: 3.5vw;
+    }
+    h2{
+        font-size: 3vw;
+        text-decoration-line: underline;
+        text-decoration-style:none;
+    }
+    h3{
+        font-size: 2.5vw;
+    }
+    span{
+        font-size: 2vw;
+    }
+    p,li{
+        font-size: 2vw;
+        color: #2D2D2A;
+    }
+    
+    
+    
+    
+    /***** Footer *****/
+    .Note{
+        background-color: hsla(0, 0%, 100%, 0.8);
+        width: 50vw;
+        margin-left: 25vw;
+    }
+    
+    .teztAreaH2{
+        text-decoration: none;
+        font-size: 2vw;
+    }
+    
+    #Notes{
+        height: 25vw;
+        width: 47vw;
+        font-size: 2vw;
+    }
+    
+    button{
+        margin-left: 20vw;
+        font-size: 1.5vw;
+    }
+    
+    /***** To be added using JS *****/
+    
+    .written{
+        width: 40vw;
+        padding: 1vw;
+        border-radius: 1vw;
+    }
+    .writtenH2{
+        font-size: 2vw;
+    }
+    #delete,#edit{
+        font-size: 2vw;
+    }
+    #delete{
+        margin-left: 25vw;
+    }
+    
+    
+    #DisplayNote{
+        font-size: 2vw;
+    }
+}
+
+@media(max-width:426px){
+    .head{
+        height: 9vw;
+    }
+    /*Logo*/
+    .logo>p{
+        font-size: 5.5vw;
+    }
+    /* Link */
+    .nav>a{
+        font-size:3.1vw;
+        margin: 0.5vw;
+    }
+    
+    /* Contents of Main */
+    .blog1{
+        width: 94vw;
+    }
+    
+    h1{
+        font-size: 3.8vw;
+    }
+    h2{
+        font-size: 3.3vw;
+    }
+    h3{
+        font-size: 2.9vw;
+    }
+    span{
+        font-size: 2.5vw;
+    }
+    p,li{
+        font-size: 2.5vw;
+        color: #2D2D2A;
+    }
+    
+    
+    
+    
+    /***** Footer *****/
+    .Note{
+        background-color: hsla(0, 0%, 100%, 0.8);
+        width: 60vw;
+        margin-left: 17vw;
+    }
+    
+    .teztAreaH2{
+        font-size: 2.5vw;
+    }
+    
+    #Notes{
+        height: 25vw;
+        width: 57vw;
+        font-size: 2.5vw;
+    }
+    
+    button{
+        margin-left: 24vw;
+        font-size: 2vw;
+    }
+    
+    /***** To be added using JS *****/
+    
+    .written{
+        width: 50vw;
+        padding: 2vw;
+        border-radius: 1vw;
+    }
+    .writtenH2{
+        font-size: 2.5vw;
+    }
+    #delete,#edit{
+        font-size: 2.5vw;
+    }
+    #delete{
+        margin-left: 30vw;
+    }
+    
+    
+    #DisplayNote{
+        font-size: 2.5vw;
+    }
+}
