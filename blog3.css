@@ -15,6 +15,7 @@ body{
 }
 
 .head{
+     overflow:hidden;
     height: 5vw;
     top: 0;
     left: 0;
